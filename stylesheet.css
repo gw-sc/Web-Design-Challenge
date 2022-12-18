@@ -1,6 +1,7 @@
 /* Your CSS code goes here */
-.bg-light {
-  background-color: #C8A2C8;
+.navbar {
+  /* background-color: #C8A2C8; */
+  padding: 30px;
 }
 
 /* .header {
@@ -9,14 +10,14 @@
     text-align: center;
   } */
   
-  h1 {
+  /* h1 {
     color: whitesmoke;
     text-decoration: underline;
     background-color: #C8A2C8;
     font-size: 100px;
     /* position: absolute;
-    left: 50%; */
-    }
+    left: 50%;
+    } */
   
   h3 {
     font-size: 50px;
