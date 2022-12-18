@@ -1,7 +1,7 @@
 # Web-Design-Challenge
 DAV Module 11 Web Visualisation Challenge
 
-Access the [Bootstrap Visualisation Dashboard] (https://gw-sc.github.io/Web-Design-challenge/)
+Access the [Bootstrap Visualisation Dashboard](https://gw-sc.github.io/Web-Design-challenge/)
 
 # Unit 11 Homework: Web Visualization Dashboard 
 
