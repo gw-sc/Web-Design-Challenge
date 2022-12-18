@@ -13,71 +13,75 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">WeatherPy</a>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <!-- Home page 
-                    * An explanation of the project
-                    * Links to each visualizations page. 
-                        There should be a sidebar containing preview images of each plot. 
-                        Clicking an image should take the user to that visualization.
-                    -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home 
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <!-- Visualisations pages 
-                    Four pages, stored in the visualizations folder, each with the following elements:
-                        * A descriptive title and heading tag.
-                        * The plot or visualization for the selected comparison (latitude vs: max temperature, humidity, cloudiness, or wind speed). 
-                            The images displayed on these pages should be stored in the assets/images folder.
-                        * A paragraph describing the plot and its significance.
-                -->            
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plots
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <!-- /Cloudiness -->
-                        <a class="dropdown-item" href="#">Visualisation 1 - Cloudiness</a>
-                        <!-- /Humidity -->
-                        <a class="dropdown-item" href="#">Visualisation 2 - Humidity</a>
-                        <!-- /Temperature -->
-                        <a class="dropdown-item" href="#">Visualisation 3 - Temperature</a>
-                        <!-- /Windspeed -->
-                        <a class="dropdown-item" href="#">Visualisation 4 - Windspeed</a>
-                        <div class="dropdown-divider"></div>
-                        <!-- /Plots -->
-                        <a class="dropdown-item" href="#">See all visualisations</a>
-                    </div>
-                </li>
-                <!-- Comparisons page 
-                    A "Comparisons" page that does the following:
-                        * Contains all of the visualizations on the same page so they can easily be compared with each other.
-                        * Uses a Bootstrap grid for the visualizations.
-                            * The grid must be two visualizations across medium and large screens, and it must be one visualization across on extra-small or small screens.
-                -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Comparisons</a>
-                </li>
-                <!-- Data page 
-                    A "Data" page that displays a responsive table containing the data used in the visualizations.
-                        * The table must be a Bootstrap table component. Refer to the Bootstrap documentation for how to use responsive tables.
-                        * The data must come from exporting the .csv file as HTML or by converting it to HTML. Try using a tool that you already know: Pandas. Pandas has a method, appropriately called to_html, that allows you to generate an HTML table from a Pandas DataFrame. To learn more, review the documentation.
-                -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Data</a>
-                </li>
 
-                <!-- <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
-            </ul>
-        </div>
-    </nav>
+    <!-- Home page 
+      * An explanation of the project
+      * Links to each visualizations page. 
+        There should be a sidebar containing preview images of each plot. 
+        Clicking an image should take the user to that visualization.
+    -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://gw-sc.github.io/Web-Design-challenge/">WeatherPy</a>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home 
+            <span class="sr-only">(current)</span>
+          </a>
+        </li> -->
+
+        <!-- Visualisations pages 
+          Four pages, stored in the visualizations folder, each with the following elements:
+            * A descriptive title and heading tag.
+            * The plot or visualization for the selected comparison (latitude vs: max temperature, humidity, cloudiness, or wind speed). 
+              The images displayed on these pages should be stored in the assets/images folder.
+            * A paragraph describing the plot and its significance.
+        -->            
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- /Cloudiness -->
+            <a class="dropdown-item" href="#">Visualisation 1 - Cloudiness</a>
+            <!-- /Humidity -->
+            <a class="dropdown-item" href="#">Visualisation 2 - Humidity</a>
+            <!-- /Temperature -->
+            <a class="dropdown-item" href="#">Visualisation 3 - Temperature</a>
+            <!-- /Windspeed -->
+            <a class="dropdown-item" href="#">Visualisation 4 - Windspeed</a>
+            <div class="dropdown-divider"></div>
+            <!-- /Plots -->
+            <a class="dropdown-item" href="#">See all visualisations</a>
+          </div>
+        </li>
+
+        <!-- Comparisons page 
+          A "Comparisons" page that does the following:
+            * Contains all of the visualizations on the same page so they can easily be compared with each other.
+            * Uses a Bootstrap grid for the visualizations.
+              * The grid must be two visualizations across medium and large screens, and it must be one visualization across on extra-small or small screens.
+        -->
+        <li class="nav-item">
+            <a class="nav-link" href="#">Comparisons</a>
+        </li>
+
+        <!-- Data page 
+          A "Data" page that displays a responsive table containing the data used in the visualizations.
+            * The table must be a Bootstrap table component. Refer to the Bootstrap documentation for how to use responsive tables.
+            * The  data must come from exporting the .csv file as HTML or by converting it to HTML. Try using a tool that you already know: Pandas. Pandas has a method, appropriately called to_html, that allows you to generate an HTML table from a Pandas DataFrame. To learn more, review the documentation.
+        -->
+        <li class="nav-item">
+            <a class="nav-link" href="#">Data</a>
+        </li>
+
+        <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
 </body>
 
 <!-- Pages -->
@@ -98,6 +102,7 @@
   
   <h3 class="text-center">Visualisations</h3>
   <div class="row">
+
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="assets/images/Fig1.png" alt="..." class="img-thumbnail">
@@ -113,56 +118,56 @@
       </div>
     </div>
       
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <img src="assets/images/Fig2.png" alt="..." class="img-thumbnail">
-        </div>
-        
-        <div class="caption">
-          <h3>Visualisation 2<br>Humidity</h3>
-          <p>North & Southern Hemisphere Humidity</p>        
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <img src="assets/images/Fig2.png" alt="..." class="img-thumbnail">
+      </div>
+      
+      <div class="caption">
+        <h3>Visualisation 2<br>Humidity</h3>
+        <p>North & Southern Hemisphere Humidity</p>        
 
+        <p><a href="#" class="btn btn-primary" role="button">
+        Northern<br>Hemisphere</a>          
+        <a href="#" class="btn btn-default" role="button">
+          Southern<br>Hemisphere</a></p>
+      </div>
+    </div>
+      
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <img src="assets/images/Fig3.png" alt="..." class="img-thumbnail">
+      </div>
+      
+      <div class="caption">
+          <h3>Visualisation 3<br>Temperature</h3>
+          <p>North & Southern Hemisphere Temperature</p>
+          
           <p><a href="#" class="btn btn-primary" role="button">
-          Northern<br>Hemisphere</a>          
+            Northern<br>Hemisphere</a> 
           <a href="#" class="btn btn-default" role="button">
             Southern<br>Hemisphere</a></p>
-          </div>
-        </div>
-        
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <img src="assets/images/Fig3.png" alt="..." class="img-thumbnail">
-          </div>
-          
-          <div class="caption">
-            <h3>Visualisation 3<br>Temperature</h3>
-            <p>North & Southern Hemisphere Temperature</p>
-            
-            <p><a href="#" class="btn btn-primary" role="button">
-              Northern<br>Hemisphere</a> 
-            <a href="#" class="btn btn-default" role="button">
-              Southern<br>Hemisphere</a></p>
-          </div>
-        </div>
-          
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <img src="assets/images/Fig4.png" alt="..." class="img-thumbnail">
-          </div>
-          
-          <div class="caption">
-            <h3>Visualisation 4<br>Windspeed</h3>
-            <p>North & Southern Hemisphere Windspeed</p>
-            
-            <p><a href="#" class="btn btn-primary" role="button">
-              Northern<br>Hemisphere</a>
-            <a href="#" class="btn btn-default" role="button">
-              Southern<br>Hemisphere</a></p>
-          </div>
-        </div>
-
+      </div>
     </div>
+        
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <img src="assets/images/Fig4.png" alt="..." class="img-thumbnail">
+      </div>
+      
+      <div class="caption">
+        <h3>Visualisation 4<br>Windspeed</h3>
+        <p>North & Southern Hemisphere Windspeed</p>
+        
+        <p><a href="#" class="btn btn-primary" role="button">
+          Northern<br>Hemisphere</a>
+        <a href="#" class="btn btn-default" role="button">
+          Southern<br>Hemisphere</a></p>
+      </div>
+    </div>
+
   </div>
+</div>
 
 <!-- <div class="container">
   
