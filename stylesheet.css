@@ -1,9 +1,13 @@
 /* Your CSS code goes here */
-.header {
+.navbar-brand {
+  background-color: #C8A2C8;
+}
+
+/* .header {
     background-color: #C8A2C8;
     padding: 30px;
     text-align: center;
-  }
+  } */
   
   h1 {
     color: whitesmoke;
