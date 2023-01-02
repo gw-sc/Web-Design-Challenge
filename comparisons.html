@@ -40,16 +40,16 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <!-- /Cloudiness -->
-                <a class="dropdown-item" href="1-cloudiness.html">Visualisation 1 - Cloudiness</a>
+                <a class="dropdown-item" href="visualisations/1-cloudiness.html">Visualisation 1 - Cloudiness</a>
                 <!-- /Humidity -->
-                <a class="dropdown-item" href="2-humidity.html">Visualisation 2 - Humidity</a>
+                <a class="dropdown-item" href="visualisations/2-humidity.html">Visualisation 2 - Humidity</a>
                 <!-- /Temperature -->
-                <a class="dropdown-item" href="3-temperature.html">Visualisation 3 - Temperature</a>
+                <a class="dropdown-item" href="visualisations/3-temperature.html">Visualisation 3 - Temperature</a>
                 <!-- /Windspeed -->
-                <a class="dropdown-item" href="4-windspeed.html">Visualisation 4 - Windspeed</a>
+                <a class="dropdown-item" href="visualisations/4-windspeed.html">Visualisation 4 - Windspeed</a>
                 <div class="dropdown-divider"></div>
                 <!-- /Plots -->
-                <a class="dropdown-item" href="../visualisations.html">See all visualisations</a>
+                <a class="dropdown-item" href="visualisations.html">See all visualisations</a>
               </div>
             </li>
     
@@ -60,7 +60,7 @@
                   * The grid must be two visualizations across medium and large screens, and it must be one visualization across on extra-small or small screens.
             -->
             <li class="nav-item">
-                <a class="nav-link" href="../comparisons.html">Comparisons</a>
+                <a class="nav-link" href="comparisons.html">Comparisons</a>
             </li>
     
             <!-- Data page 
@@ -69,7 +69,7 @@
                 * The  data must come from exporting the .csv file as HTML or by converting it to HTML. Try using a tool that you already know: Pandas. Pandas has a method, appropriately called to_html, that allows you to generate an HTML table from a Pandas DataFrame. To learn more, review the documentation.
             -->
             <li class="nav-item">
-                <a class="nav-link" href="../data.html">Data</a>
+                <a class="nav-link" href="data.html">Data</a>
             </li>
     
             <!-- <li class="nav-item">
@@ -79,20 +79,68 @@
         </div>
       </nav>
 
+<div class="container">
+  <div class="jumbotron">
     <h1 class="display-4">Comparisons</h1>
     <hr class="my-4">
     <p class="lead">
-        Comparisons from Unit 6 Python API Challenge <br>
-        "What's the weather like as we approach the equator?" <br>
-        Northern Hemisphere vs Southern Hemisphere
+        Visualisation comparisons from Unit 6 Python API Challenge <br>
+        <em>"What's the weather like as we approach the equator?"</em> <br>
+        Northern Hemisphere vs Southern Hemisphere by city latitude
     </p>
+    <hr class="my-4">
 
-    <div>
-        <img src = "assetsimages/Fig1.png" alt = "..."> <img src = "assetsimages/Fig1.png" alt = "..."> <br>
-        <img src = "assetsimages/Fig2.png" alt = "..."> <img src = "assetsimages/Fig2.png" alt = "..."> <br>
-        <img src = "assetsimages/Fig3.png" alt = "..."> <img src = "assetsimages/Fig3.png" alt = "..."> <br>
-        <img src = "assetsimages/Fig4.png" alt = "..."> <img src = "assetsimages/Fig4.png" alt = "...">
+  <div class="row">
+    <div class = "col-md-12">
+      <h3>Cloudiness</h3>
     </div>
+    <div class = "col-md-6">
+      <p>Northern Hemisphere</p>
+        <img src = "assets/images/North Lat x Cloudiness.png" alt = "..." class="img-thumbnail">
+    </div>
+    <div class = "col-md-6">
+      <p>Southern Hemisphere</p>
+      <img src = "assets/images/South Lat x Cloudiness.png" alt = "..." class="img-thumbnail">
+    </div>
+    
+    <div class = "col-md-12">
+      <h3>Humidity</h3>
+    </div>
+    <div class = "col-md-6">
+      <p>Northern Hemisphere</p>
+      <img src = "assets/images/North Lat x Humidity.png" alt = "..." class="img-thumbnail">
+    </div>
+    <div class = "col-md-6">
+      <p>Southern Hemisphere</p>
+      <img src = "assets/images/South Lat x Humidity.png" alt = "..." class="img-thumbnail">
+    </div>
+
+    <div class = "col-md-12">
+      <h3>Temperature</h3>
+    </div>
+    <div class = "col-md-6">
+      <p>Northern Hemisphere</p>
+      <img src = "assets/images/North Lat x Temp.png" alt = "..." class="img-thumbnail">
+    </div>
+    <div class = "col-md-6">
+      <p>Southern Hemisphere</p>
+      <img src = "assets/images/South Lat x Temp.png" alt = "..." class="img-thumbnail">
+    </div>
+
+    <div class = "col-md-12">
+      <h3>Windspeed</h3>
+    </div>
+    <div class = "col-md-6">
+      <p>Northern Hemisphere</p>
+      <img src = "assets/images/North Lat x Wind.png" alt = "..." class="img-thumbnail">
+    </div>
+    <div class = "col-md-6">
+      <p>Southern Hemisphere</p>
+      <img src = "assets/images/South Lat x Wind.png" alt = "..." class="img-thumbnail">
+    </div>
+        
+  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
