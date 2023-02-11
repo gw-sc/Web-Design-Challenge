@@ -9,22 +9,29 @@
     <link rel = "stylesheet" href ="stylesheet.css">
     <!-- Bootstrap Stylesheet -->
     <link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-        <a class="navbar-brand" href="https://gw-sc.github.io/Web-Design-challenge/">WeatherPy</a>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent col-sm-12 col-md-3 col-lg-2">
-          <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="#">Home 
-                <span class="sr-only">(current)</span>
-              </a>
-            </li> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Navigation Bar -->
+
+    <!-- Home page 
+      * An explanation of the project
+      * Links to each visualizations page. 
+        There should be a sidebar containing preview images of each plot. 
+        Clicking an image should take the user to that visualization.
+    -->
+  <div class="container-fluid row">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">WeatherPy</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent col-sm-12 col-md-3 col-lg-2">
+        <ul class="nav navbar-nav ml-auto">
     
             <!-- Visualisations pages 
               Four pages, stored in the visualizations folder, each with the following elements:
@@ -78,39 +85,65 @@
         </div>
       </nav>
 
-    <h1 class="display-4">Temperature</h1>
-    <hr class="my-4">
-    <p class="lead">
-        Temperature visualisations from Unit 6 Python API Challenge <br>
-        "What's the weather like as we approach the equator?" <br>
+<div class="container row">
+  <div class="row col-lg-8 col-md-8 col-sm-12">
+    <div class="jumbotron"> 
+
+      <h1 class="display-4">Temperature</h1>
+      <hr class="my-4">
+      <p>
+          The Maximum Temperature (F) by City Latitude scatter plot shows that the maximum temperature (F) peaks around 0 latitiude, but drops either ends of the latitude in an inverted U shape.
       </p>
 
-      
-
-
-  <div class="row">
-
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <img src="../assets/images/Fig1.png" alt="..." class="img-thumbnail">
-      </div>
-      <div class="caption">
-        <h3>Visualisation 3<br>Temperature</h3>
-          <p>North & Southern Hemisphere Temperature</p>
-          <p><a href="#" class="btn btn-primary" role="button">
-            Northern<br>Hemisphere</a> 
-          <a href="#" class="btn btn-default" role="button">
-            Southern<br>Hemisphere</a>
-          </p>
+      <div class="col-md-12">
+        <div class="thumbnail">
+          <img src="../assets/images/Temperature.png" alt="..." class="img-thumbnail">
+        </div>
       </div>
     </div>
+  </div>
+
+    <!--  visualisation sidebar -->
+    <!-- Links to each visualizations page. 
+      There should be a sidebar containing preview images of each plot. 
+      Clicking an image should take the user to that visualization. -->
+  <div class="column right col-lg-4 col-md-4 col-sm-12">
+    <h3 class="text-center">Visualisations</h3>
+    <hr>
+    <div class="row" style = "padding-bottom: 10px">
+      
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="./1-cloudiness.html"><img class="img-thumbnail" alt="Cloudiness" src="../assets/images/Cloudiness.png"></a>
+        </div>
+      </div>
+        
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="./2-humidity.html"><img class="img-thumbnail" alt="Humidity" src="../assets/images/Humidity.png"></a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="./3-temperature.html"><img class="img-thumbnail" alt="Temperature" src="../assets/images/Temperature.png"></a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="./4-windspeed.html"><img class="img-thumbnail" alt="Windspeed" src="../assets/images/Windspeed.png"></a>
+        </div>
+      </div> 
+    </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 </html>
